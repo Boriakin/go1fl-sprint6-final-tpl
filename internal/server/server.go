@@ -9,7 +9,7 @@ import (
 )
 
 type Server struct {
-	logger *log.Logger
+	Logger *log.Logger
 	Server *http.Server
 }
 
@@ -24,7 +24,7 @@ func NewServer(logger *log.Logger) *Server {
 	}
 
 	return &Server{
-		logger: logger,
+		Logger: logger,
 		Server: server,
 	}
 }
